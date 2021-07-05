@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ItemListActivity">
+
+    <Spinner
+        android:id="@+id/spinnerMaintain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinnerMaintain"/>
+
+    <EditText
+        android:id="@+id/etNameProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter the name of the product" />
+
+    <EditText
+        android:id="@+id/editPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter the positon"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <DatePicker
+            android:id="@+id/datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add the product" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update the product" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete the product" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:entries="@array/spinnerFilter" />
+
+    <ListView
+        android:id="@+id/listViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="417dp" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CAGAssignmentWork</string>
+
+    <string-array name="spinnerMaintain">
+        <item>Add a new product</item>
+        <item>Update a product</item>
+        <item>Remove a product</item>
+
+    </string-array>
+
+    <string-array name="spinnerFilter">
+        <item>Arrange by 1 month</item>
+        <item>Arrange by 3 months</item>
+        <item>Arrange by 6 months</item>
+
+    </string-array>
+</resources>
